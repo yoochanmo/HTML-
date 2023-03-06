@@ -22,10 +22,11 @@
     1. 내장함수 : JavaScript에서 기본적으로 제공해 주는 함수를 내장함수라 한다.
         ex) alter, prompt, confirm....
     2. 사용자정의함수
-        
+        1) 익명함수
+        2) 선언함수
 
     */
-   //익명함수
+  // 1. 익명함수
   let fn01 = function() {
     // 실행할 문장....
     return '반환된 값';
@@ -33,6 +34,28 @@
   let result = fn01();
   console.log(typeof fn01, result);
   console.log(`${fn01()}`);
+  
+  // 2) . 재사용하기 위한 함수
+  let fn02 = function add(a, b) {return a + b;}
+  result = fn02(10, 20);
+  console.log(`10 + 20 = ${result}`);
+  console.log(`100 + 300 = ${fn02(100, 300)}`);
+
+  // 2 . 선언함수
+
+
+  /* 실습1. 계산기 함수를 작성해 보세요
+      매개변수가 3개인 calculator(연산자, 값 1, 값 2)
+      연산자 : +, -, *, /, %
+      각 연산자에 따라 값 1과 값 2의 연산결과를 출력
+      document.write('값1 + 값2 = 결과값')
+      document.write('값1 - 값2 = 결과값')
+      document.write('값1 * 값2 = 결과값')
+      document.write('값1 / 값2 = 결과값')
+      document.write('값1 % 값2 = 결과값')
+  */
+
+  
 
   //1.
   for (let i = 0; i < 5; i++) {
