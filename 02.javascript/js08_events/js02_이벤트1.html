@@ -28,20 +28,21 @@
       // 실습2.
       // 임의의 img태그를 클릭하면 상세설명내용(p태그)과 상세설명닫기버튼 이 나타내게 
       // 하고 상세내용닫기버튼을 클릭하면 상세내용이 숨겨지는 이벤트를 작성하세요
-      document.getElementById("rabbit").onclick = (e) => {
+      document.getElementById("rabbit").addEventListener = (e) => {
                 let a = document.getElementById("a");
                 a.style.display = "block";
             }
             
-      
+          }
       // 실습3. button클릭시에 눌린횟수를 카운트하기
 			// button-1을 클릭하면 2개가 동시에 카운트되고
 			// button-2를 클릭하면 button-2의 횟수만 카운트하기
 			// getElementById(), Number(), innerHTML, Number()
 			// button1.onclick -> button2.onclick을 호출
-      document.getElementById
+    
+    
       
-    }
+    
     
     
   </script>
@@ -60,11 +61,11 @@
   <hr>
 
 
-  <button id="button1">button1</button>
-  <button id="button2">button2</button>
+  <button id="Button1">button1</button>
+  <button id="Button2">button2</button>
 
-  <h3>Button1 - </span>0</h3>
-	<h3>Button2 - </span>0</h3>
+  <h3>button1 - <span id="count1">0</span></h3>
+	<h3>button2 - <span id="count2">0</span></h3>
 
 
   
