@@ -2,8 +2,8 @@ const nick = document.querySelector("#nick"); // 이름
 const major = document.querySelector("#major"); // 전공
 const save = document.querySelector("#save"); // 신청하기 버튼
 const plylist = document.querySelector("#plylist"); // 표시될 영역
-
 const reset = document.querySelector("button[type='reset']");
+
 
 reset.addEventListener("click", (e) => {
   e.preventDefault();
@@ -18,8 +18,9 @@ save.addEventListener("click", (e) => {
 
   const item = document.createElement("li"); 
   item.innerHTML = `${nick.value} - ${major.value} <button type="button" class="delbtn">"신청 취소"</button>`;
+  
   plylist.appendChild(item);
-
+  
   nick.value = "";
   major.value = "";
 
@@ -34,4 +35,4 @@ save.addEventListener("click", (e) => {
 function removeItem() {
   let list = this.parentNode;
   list.parentNode.removeChild(list);
-}
+} 
