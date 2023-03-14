@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI 메뉴바</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/Flick/jquery-ui.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>  
+  <script>
+    $(function() {
+      $("#menu").menu();
+    });
+  </script>
+</head>
+<body>
+  <ul id="menu">
+    <li>메뉴1
+      <ul>
+        <li>서브메뉴1</li>
+        <li>서브메뉴2</li>
+        <li>서브메뉴3</li>
+      </ul>
+    </li>
+    <li>메뉴2</li>
+    <li>메뉴3
+      <ul>
+        <li>서브메뉴4</li>
+        <li>서브메뉴5</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
